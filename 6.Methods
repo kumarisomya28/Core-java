@@ -1,4 +1,4 @@
-public class Methods {
+
     public static void calculateSum(){
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
