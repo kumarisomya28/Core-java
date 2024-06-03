@@ -47,3 +47,37 @@ public static void main(String[] args) {
         System.out.println("The Second number after swap is :"+num2);
 
     }
+
+Q6) Types of variable.
+   
+
+        static int m=100;  //static variable
+        void method(){
+            int n=90; //local variable
+        }
+
+    public static void main(String[] args) {
+        int data=50; //Instance variable
+    }
+  }
+
+Q7) Variable overflow.
+
+ public static void main(String[] args) {
+        int a = 130;
+        byte b = (byte) a;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+Q8) Lower type.
+ public static void main(String[] args) {
+        byte a=10;
+        byte b=10;
+        byte c=(byte)(a+b);
+        System.out.println(c);
+    }
+
+  
+
