@@ -111,6 +111,9 @@ class pen{
   }
   }
 
+
+Q6) Constructor
+  
 Q5) Constructors.
    public class OOps {
   public static void main(String[] args) {
