@@ -363,3 +363,26 @@ Student(Student s1) {
         this.roll = roll;
     }
 }
+
+Q13) Constructor chaining using this() keyword.
+  class Constructor {
+   Constructor(){
+        this(5);
+        System.out.println("The default constructor");
+    }
+
+    Constructor(int x){
+        this(5,15);
+        System.out.println(x);
+    }
+
+    Constructor(int x,int y){
+        System.out.println(x*y);
+    }
+
+    public static void main(String[] args) {
+        new Constructor();
+    }
+
+
+}
