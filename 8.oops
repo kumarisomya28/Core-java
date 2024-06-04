@@ -43,6 +43,29 @@ Q2) Classes and Objects.
   }
   }
 
+Q3) Classes and objects.
+public class OOps {
+    static String Employee_name;
+     static float Employee_salary;
+    static void set(String n, float p){
+        Employee_name =n;
+        Employee_salary=p;
+
+    }
+      static void get(){
+        System.out.println(Employee_name);
+         System.out.println(Employee_salary);
+
+    }
+
+    public static void main(String[] args) {
+        OOps.set("somya",100000.0f);
+        OOps.get();
+    }
+}
+
+
+
 Q3) Access Modifier.
 public class OOps {
   public static void main(String[] args) {
