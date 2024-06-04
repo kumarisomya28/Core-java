@@ -20,6 +20,7 @@ class OOPS{
     } 
  }
 
+
 Q2) Classes and Objects.
    public class OOps {
   public static void main(String[] args) {
@@ -42,6 +43,8 @@ Q2) Classes and Objects.
     tip= newTip;
   }
   }
+
+
 
 Q3) Classes and objects.
 public class OOps {
@@ -81,6 +84,8 @@ class BankAccount {
        password =pwd;
      }
   }
+
+
 Q4) Getters and Setters.
   public class OOps {
   public static void main(String[] args) {
@@ -140,6 +145,7 @@ class Student{
     }
 }
 
+
 Q6) Constructors.
 public class OOps {
   public static void main(String[] args) {
@@ -175,6 +181,7 @@ class Constructor{
         Constructor somya=new Constructor();
     }
      }
+
 
 Q9) Parameterized constructor.
 class Constructor{
