@@ -165,6 +165,36 @@ class Student {
     }
 }
 
+Q8) Default constructor.
+class Constructor{
+   Constructor(){
+        System.out.println("Default constructor");
+    }
+
+    public static void main(String[] args) {
+        Constructor somya=new Constructor();
+    }
+     }
+
+Q9) Parameterized constructor.
+class Constructor{
+String name;
+int id;
+Constructor(String name,int id){
+    this.name=name;
+    this.id=id;
+
+}
+}
+class Parameterized_constructor{
+    public static void main(String[] args) {
+        Constructor somya= new Constructor("saurav",21);
+        System.out.println(  somya.name +" "+ somya.id);
+    }
+}
+   
+  
+
 Q7) Copy constructors.
 public class OOps {
   public static void main(String[] args) {
