@@ -221,8 +221,32 @@ class Overloading{
     Constructor constructor2= new Constructor("somya",21);
     Constructor constructor3= new Constructor(123456789);
 }}
-   
-   
+
+Q12) Copy constructor.
+  class Constructor {
+  String name;
+    int id;
+    Constructor(String name,int id){
+        this.name=name;
+        this.id=id;
+    }
+    Constructor(Constructor obj2){
+        this.name=obj2.name;
+        this.id=obj2.id;
+    }
+}
+class Copy_Constructor{
+    public static void main(String[] args) {
+        System.out.println("first object");
+        Constructor constructor1= new Constructor("somya",21);
+        System.out.println("ConstructorName:"+constructor1.name+" "+"constructorId:"+" "+constructor1.id);
+        System.out.println();
+
+        Constructor constructor2 = new Constructor(constructor1);
+        System.out.println("copy constructor used second object");
+        System.out.println("constructorName:"+constructor2.name+" "+"and constructorid:"+ constructor2.id);
+    }
+}
   
 
 Q7) Copy constructors.
