@@ -222,6 +222,32 @@ class Overloading{
     Constructor constructor3= new Constructor(123456789);
 }}
 
+Q)Constructor overloading.
+  class Constructor {
+  double width,height,depth;
+    int boxNo;
+    Constructor(double w,double h, double d,int num){
+        width=w;
+        depth=d;
+        height=h;
+        boxNo=num;
+
+    }
+    Constructor(){
+        width=height=depth=0;
+    }
+    Constructor(int num){
+        this();
+        boxNo=num;
+    }
+
+    public static void main(String[] args) {
+        Constructor box1= new Constructor(1);
+        System.out.println(box1.width);
+    }
+
+}
+
 Q12) Copy constructor.
   class Constructor {
   String name;
