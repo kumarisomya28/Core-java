@@ -199,6 +199,29 @@ class Parameterized_constructor{
         System.out.println(  somya.name +" "+ somya.id);
     }
 }
+
+Q10) Constructor Overloading.
+  class Constructor{
+ Constructor(String name){
+        System.out.println("constructor with one"+"argument String : "+ name);
+    }
+    Constructor(String name,int age){
+        System.out.println("constructor with two argument:"+"String and integer:"+name +" "+age);
+
+    }
+    Constructor(long id){
+        System.out.println("constructor with one argument:"+"long:"+id);
+    }
+}
+class Overloading{
+    public static void main(String[] args) {
+        Constructor constructor1=new Constructor("Somya");
+
+
+    Constructor constructor2= new Constructor("somya",21);
+    Constructor constructor3= new Constructor(123456789);
+}}
+   
    
   
 
