@@ -69,7 +69,7 @@ public class OOps {
 
 
 
-Q3) Access Modifier.
+Q4) Access Modifier.
 public class OOps {
   public static void main(String[] args) {
  BankAccount myAcc =new BankAccount();
@@ -86,7 +86,7 @@ class BankAccount {
   }
 
 
-Q4) Getters and Setters.
+Q5) Getters and Setters.
   public class OOps {
   public static void main(String[] args) {
     pen p1=new pen();
@@ -130,7 +130,7 @@ public class Constructor{
 }
    
   
-Q5) Constructors.
+Q7) Constructors.
    public class OOps {
   public static void main(String[] args) {
 Student s1 =new Student("Somya");
@@ -146,7 +146,7 @@ class Student{
 }
 
 
-Q6) Constructors.
+Q8) Constructors.
 public class OOps {
   public static void main(String[] args) {
 Student s1 =new Student();
@@ -171,7 +171,7 @@ class Student {
     }
 }
 
-Q8) Default constructor.
+Q9) Default constructor.
 class Constructor{
    Constructor(){
         System.out.println("Default constructor");
@@ -183,7 +183,7 @@ class Constructor{
      }
 
 
-Q9) Parameterized constructor.
+Q10) Parameterized constructor.
 class Constructor{
 String name;
 int id;
@@ -200,7 +200,7 @@ class Parameterized_constructor{
     }
 }
 
-Q10) Constructor Overloading.
+Q11) Constructor Overloading.
   class Constructor{
  Constructor(String name){
         System.out.println("constructor with one"+"argument String : "+ name);
@@ -222,7 +222,7 @@ class Overloading{
     Constructor constructor3= new Constructor(123456789);
 }}
 
-Q)Constructor overloading.
+Q12)Constructor overloading.
   class Constructor {
   double width,height,depth;
     int boxNo;
@@ -248,7 +248,7 @@ Q)Constructor overloading.
 
 }
 
-Q12) Copy constructor.
+Q13) Copy constructor.
   class Constructor {
   String name;
     int id;
@@ -275,7 +275,7 @@ class Copy_Constructor{
 }
   
 
-Q7) Copy constructors.
+Q14) Copy constructors.
 public class OOps {
   public static void main(String[] args) {
 Student s1 =new Student();
@@ -318,7 +318,7 @@ Student s1 =new Student();
     }
 }
 
-Q8) Deep copy constructors.
+Q15) Deep copy constructors.
 public class OOps {
   public static void main(String[] args) {
 Student s1 =new Student();
@@ -364,7 +364,7 @@ Student(Student s1) {
     }
 }
 
-Q13) Constructor chaining using this() keyword.
+Q16) Constructor chaining using this() keyword.
   class Constructor {
    Constructor(){
         this(5);
@@ -387,7 +387,7 @@ Q13) Constructor chaining using this() keyword.
 
 }
 
-Q14) Constructor chaining using super() keyword.
+Q17) Constructor chaining using super() keyword.
     class Constructor {
    String name;
         Constructor() {
@@ -423,7 +423,7 @@ Q14) Constructor chaining using super() keyword.
         }
     }
 
-Q14) private constructor and singleton classes.
+Q18) private constructor and singleton classes.
  class MySingleton {
         static MySingleton instance = null;
         public int x = 10;
