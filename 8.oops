@@ -113,6 +113,17 @@ class pen{
 
 
 Q6) Constructor
+public class Constructor{
+   Constructor(){
+       super();
+       System.out.println("Constructor called");
+   }
+
+    public static void main(String[] args) {
+        Constructor somya=new Constructor();
+    }
+}
+   
   
 Q5) Constructors.
    public class OOps {
