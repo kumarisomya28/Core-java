@@ -556,4 +556,15 @@ public class Abstraction {
         myCat.makeSound();
     }
 }
-    
+
+
+Q21) Packages(Using Static import).
+      package com.StaticImportDemo;
+     import static java.lang.System.*;
+
+   public class staticImportdemo {
+    public static void main(String[] args) {
+        out.println("somya");
+    }
+
+}
