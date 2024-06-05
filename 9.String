@@ -1,0 +1,51 @@
+Q1) Take a input string from user and print it .
+  
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next(); //this function is used only for a single word it doesn't contain the word after space
+        System.out.println(name);
+    }
+
+
+Q2)Take a input string(two words or a line) from user and print it.
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        System.out.println(name);
+    }
+
+
+Q3)Find the length of the String by using length() function.
+   
+     public static void main(String[] args) {
+        String fullName = "Kumari somya";
+        System.out.println(fullName.length());
+    }
+
+Q4) Concatenate Strings and print it.
+  
+   public static void main(String[] args) {
+        String firstName = "kumari";
+        String lastName = "Somya";
+        String fullName = firstName+" "+lastName;
+        System.out.println(fullName);
+    }
+
+Q5) print the each character of the string by using charAt.
+
+      public static void Printletters(String str) {
+        for (int i=0; i<str.length();i++){
+            System.out.print(str.charAt(i)+" ");
+        }
+        System.out.println();
+    }
+
+
+    public static void main(String[] args) {
+        String firstName = "kumari";
+        String lastName = "Somya";
+        String fullName = firstName+" "+lastName;
+
+        Printletters(fullName);
+    }
