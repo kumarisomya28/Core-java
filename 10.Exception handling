@@ -156,3 +156,20 @@ public class Exception {
     }
 }
 
+Q11) Try-catch-finally block.
+public class FinallyBlockInException {
+    public static void main(String[] args) {
+        int a[]= new int[5];
+        System.out.println("hello world");
+
+        try{
+            System.out.println(a[3]);
+        } catch(java.lang.Exception e){
+            System.out.println("Exception Handled");
+
+        } finally{
+            System.out.println("I will run always");
+        }
+        System.out.println("Bye world");
+    }
+}
