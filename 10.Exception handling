@@ -1,3 +1,5 @@
+Q1) Java try catch block:-
+
 import java.io.IOException;
 
 public class try_catch {
