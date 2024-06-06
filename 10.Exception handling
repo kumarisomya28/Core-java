@@ -39,7 +39,7 @@ public class try_catch {
     }
 
 
-Q2) Arithmetic exception.
+Q2) Arithmetic Exception.
 public class Arithmetic_exception {
     public static void main(String[] args) {
         try{
@@ -49,6 +49,18 @@ public class Arithmetic_exception {
         }
         catch(ArithmeticException e){
             System.out.println("can't divide a number by 0");
+        }
+    }
+}
+
+Q3)NullPointer Exception.
+public class NullPointer_exception {
+    public static void main(String[] args) {
+        try{
+            String a= null;
+            System.out.println(a.charAt(0));
+        }catch(NullPointerException e) {
+            System.out.println("NullPointerException");
         }
     }
 }
