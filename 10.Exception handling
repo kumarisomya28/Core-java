@@ -95,5 +95,64 @@ public class FileNotFound_exception {
     }
 }
 
-Q6) 
+Q6) NumberFormat Exception.
+public class NumberFormat_exception {
+    public static void main(String[] args) {
+        try{
+            int num = Integer.parseInt("somya");
+            System.out.println(num);
+        } catch(NumberFormatException e){
+            System.out.println("Number format exception");
+        }
+    }
+}
+
+Q7)  ArrayIndexOutOfBounds Exception.
+public class ArrayIndexOutOfBounds {
+    public static void main(String[] args) {
+        try{
+            int a[] = new int[5];
+            a[6] =9;
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("array index is out of bounds");
+        }
+    }
+}
+
+Q8)IO Exception .
+public class IO_exception {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner("Somya");
+        System.out.println(""+ sc.nextLine());
+        System.out.println("Exception output:"+ sc.ioException());
+        sc.close();
+    }
+}
+
+Q9)NoSuchMethod Exception.
+  public class NoSuchMethod_exception {
+    public static void main(String[] args) {
+        Set exampleSet = new HashSet();
+        Hashtable exampleTable = new Hashtable();
+
+        exampleSet.iterator().next();
+        exampleTable.elements().nextElement();
+    }
+}
+
+Q10)IllegalArgumentException.
+public class Exception {
+    public static void print(int a){
+        if(a>=18){
+            System.out.println("Eligible for Voting");
+        } else{
+            throw new IllegalArgumentException("not Eligible for Voting");
+        }
+    }
+    public static void main(String[] args) {
+       Exception.print(14);
+
+    }
+}
 
