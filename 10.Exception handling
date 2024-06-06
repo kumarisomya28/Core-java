@@ -64,3 +64,18 @@ public class NullPointer_exception {
         }
     }
 }
+
+Q4)StringIndexOutOfBound Exception.
+public class StringIndexOutOfBound_exception {
+    public static void main(String[] args) {
+        try{
+            String a="I am somya";
+            char ch= a.charAt(45);
+            System.out.println(ch);
+        }
+        catch(StringIndexOutOfBoundsException e){
+            System.out.println("StringIndexOutOfBoundsException");
+        }
+    }
+}
+
