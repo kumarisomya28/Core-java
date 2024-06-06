@@ -211,3 +211,39 @@ public class javathrow {
             System.out.println("caught in main");
         }
     }
+
+Q14) Custom Exception
+ class MyException extends Exception {
+     public MyException(String s){
+         super(s);
+         
+     }
+    
+    
+}
+public class CustomPackage2{
+    public static void main(String[] args) {
+        try{
+            throw new MyException("somya");
+        }
+        catch(MyException e){
+            System.out.println("caught");
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+Q15) Chained Exception.
+public class Chained_exception {
+    public static void main(String[] args) {
+        try{
+            NumberFormatException e= new NumberFormatException("Exception");
+            e.initCause(new NullPointerException("This is actual cause of the exception"));
+            throw e;
+        }
+        catch(NumberFormatException e){
+            System.out.println(e);
+            System.out.println(e.getCause());
+        }
+    }
+}
