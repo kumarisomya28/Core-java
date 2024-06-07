@@ -1,0 +1,48 @@
+Q1).Print an array in which inputs are taken from users and also print the percentage of all the inputs.
+ public static void main(String[] args) {
+        int marks[] = new int[3];
+        Scanner Sc = new Scanner(System.in);
+        marks[0] = Sc.nextInt();
+        marks[1] = Sc.nextInt();
+        marks[2] = Sc.nextInt();
+        for (int i = 0; i < marks.length; i++) {
+            System.out.print(marks[i]+" ");
+        }
+            int percentage = (marks[0] + marks[1] + marks[2]) / 3;
+            System.out.println("percentage =" + percentage + "%");
+        }
+
+Q2).Passing arrays as arguments.
+    public static void main(String[] args) {
+        int marks[]={98,97,99};
+        update(marks);
+        for(int i=0;i<marks.length;i++){
+            System.out.print(marks[i]+" ");
+        }
+        System.out.println();
+
+
+
+    }
+public static void update(int marks[]){
+    for(int i=0;i<marks.length;i++){
+        marks[i]=marks[i]+1;
+    }
+}
+
+Q3).Example of java array,where declare,instantiate,initialize and traverse an array.
+  public static void main(String[] args) {
+        int a[] = new int[5];//declaration and instantiation
+        a[0] = 10;//initialization
+        a[1] = 20;
+        a[2] = 70;
+        a[3] = 40;
+        a[4] = 50;
+        //traversing array
+        for (int i = 0; i < a.length; i++) {  //length is the property of array
+            System.out.println(a[i]);
+
+
+        }
+
+    }
