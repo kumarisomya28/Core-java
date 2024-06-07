@@ -1,4 +1,4 @@
-Q1).Arraylist
+   Arraylist:-
   Q1) Syntax for ArrayList.
     import java.util.ArrayList;
 public class Arraylist {
