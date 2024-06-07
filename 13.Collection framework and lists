@@ -1,0 +1,179 @@
+Q1).Arraylist
+  Q1) Syntax for ArrayList.
+    import java.util.ArrayList;
+public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<String> list2 = new ArrayList<>();
+        ArrayList<Boolean> list3 = new ArrayList<>();
+    }
+}
+
+Q2) Add element in ArrayList.
+    import java.util.ArrayList;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(1,9);
+     
+
+        System.out.println(list);
+    }
+}
+
+Q3) Get element in ArrayList.
+    import java.util.ArrayList;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+
+        //get operation
+        int element = list.get(2);
+        System.out.println(element);
+    }
+}
+
+Q4) Remove element in ArrayList.
+   import java.util.ArrayList;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+          //Delete
+        list.remove(2);
+        System.out.println(list);
+    }
+}
+
+Q5) Set element at index.
+import java.util.ArrayList;
+public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+
+          list.set(2,10);
+        System.out.println(list);
+    }
+}
+
+Q6) Contains element.
+import java.util.ArrayList;
+public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+       System.out.println(list.contains(1));
+        System.out.println(list.contains(11));
+    }
+}
+
+Q7) Size of arrayList.
+   import java.util.ArrayList;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(1,9);
+
+        System.out.println(list.size());
+        for(int i=0;i<list.size();i++){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
+}}
+
+Q8) Print reverse of an ArrayList.
+   import java.util.ArrayList;
+     public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(1,9);
+
+        for(int i=list.size()-1;i>=0;i--){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
+}}
+
+Q9) Find maximum in an ArrayList.
+  import java.util.ArrayList;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(9);
+        list.add(6);
+        list.add(8);
+//        list.add(1,9);
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < list.size(); i++) {
+//            if (max < list.get(i)) {
+//            max = list.get(i);
+            max= Math.max(max, list.get(i));
+        }
+    
+        System.out.println("max element = "+ max);
+}}}
+
+Q10) Swap 2 Numbers.
+    import java.util.*;
+    public class Arraylist {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(9);
+        list.add(6);
+        list.add(8);
+        int idx1 = 1 , idx2 = 3;
+        System.out.println(list);
+        swap(list, idx1, idx2);
+        System.out.println(list);
+    }
+        public static void swap(ArrayList<Integer>list,int idx1,int idx2){
+            int temp=list.get(idx1);
+            list.set(idx1,list.get(idx2));
+            list.set(idx2,temp);
+        }}
