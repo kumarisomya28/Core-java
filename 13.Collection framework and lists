@@ -280,6 +280,63 @@ public class llMethods {
         System.out.println(ll);
     }
 }
-   
 
+Q15) LinkedList
+  import java.util.LinkedList;
+
+public class llElementsAndOperations {
+    public static void main(String[] args) {
+        LinkedList<String> ll = new LinkedList<>();
+        ll.add("somya");
+        ll.add("simmi");
+        ll.add(1,"for");
+
+        System.out.println(ll);
+
+//        ll.set(1,"is");
+//
+//        System.out.println(ll);
+
+//        ll.remove(1);
+//        System.out.println(ll);
+//
+//        ll.remove("simmi");
+//        System.out.println(ll);
+
+        for(int i =0;i<ll.size();i++){
+            System.out.print(ll.get(i)+" ");
+        }
+
+        System.out.println();
+        for(String str : ll)
+            System.out.print(str + " ");
+    }
+}
+
+Q16) Linkedlist
+import java.util.LinkedList;
+
+public class lloperations {
+    public static void main(String[] args) {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(123);
+        list.add(12);
+        list.add(11);
+        list.add(1134);
+        System.out.println(list);
+//        Object[] a= list.toArray();
+//        System.out.print("After conversion linkedlist to array");
+//        for(Object element : a)
+//            System.out.print(element +" ");
+
+//        System.out.println(list.size());
+//        System.out.println(list.removeFirst());
+//        System.out.println(list);
+
+        System.out.println(list.removeLast());
+        System.out.println(list);
+        System.out.println(list.removeLast());
+        System.out.println(list);
+    }
+}
         
