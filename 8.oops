@@ -674,6 +674,6 @@ public class LearnInnerClass {
         Toy toy = obj. new Toy();
         toy.price=45;
 
-        Playstation playstation = new LearnInnerClass.Playstation()
+        Playstation playstation = new LearnInnerClass.Playstation();
     }
 }
