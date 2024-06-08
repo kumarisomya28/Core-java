@@ -677,3 +677,37 @@ public class LearnInnerClass {
         Playstation playstation = new LearnInnerClass.Playstation();
     }
 }
+
+Q25) Anonymous Classes in java.
+public class ClassLearnAnonymousClasses {
+//   class InnerClass extends OuterClass{
+//}
+
+    OuterClass obj = new OuterClass(){
+    void sing(){
+
+    }
+
+
+
+    public void outerMethod() {
+
+    }
+};
+
+    SuperInterface obj2 = new SuperInterface() {
+        @Override
+        public void interfaceMethdod() {
+
+        }
+
+};}
+class OuterClass{
+    public void outerMethod(){
+
+    }
+};
+
+interface SuperInterface {
+    void interfaceMethdod();
+}
