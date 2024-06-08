@@ -618,3 +618,41 @@ class Car extends Vehicle {
 
     }
 }
+
+Q23) Interfaces in java.
+ public class LearnInterface {
+    public static void main(String[] args) {
+        Monkey monkey = new Monkey();
+        monkey.eats();
+
+        System.out.println(Animal.LEGS);
+    }
+
+}
+
+interface Pet{
+    void sings();
+}
+
+interface Animal{
+
+    int LEGS=  4;
+   void eats();
+
+    default void walk(){
+        System.out.println("Animal is walking");
+
+    }
+}
+
+class Monkey implements  Animal,Pet{
+    @Override
+    public void sings() {
+        System.out.println("Monkey is singing");
+    }
+
+    @Override
+    public void eats() {
+        System.out.println("Monkey is eating");
+    }
+}
